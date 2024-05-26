@@ -40,15 +40,7 @@ var lyr_Akule_FEED_Districts_2 = new ol.layer.Vector({
                 source:jsonSource_Akule_FEED_Districts_2, 
                 style: style_Akule_FEED_Districts_2,
                 interactive: true,
-    title: 'Akule_FEED_Districts<br />\
-    <img src="styles/legend/Akule_FEED_Districts_2_0.png" /> Chitipa<br />\
-    <img src="styles/legend/Akule_FEED_Districts_2_1.png" /> Dowa<br />\
-    <img src="styles/legend/Akule_FEED_Districts_2_2.png" /> Karonga<br />\
-    <img src="styles/legend/Akule_FEED_Districts_2_3.png" /> Lilongwe<br />\
-    <img src="styles/legend/Akule_FEED_Districts_2_4.png" /> Nkhata Bay<br />\
-    <img src="styles/legend/Akule_FEED_Districts_2_5.png" /> Nkhotakota<br />\
-    <img src="styles/legend/Akule_FEED_Districts_2_6.png" /> Rumphi<br />\
-    <img src="styles/legend/Akule_FEED_Districts_2_7.png" /> Salima<br />'
+    title: 'Akule_FEED_Districts<br />'
         });
 var format_Akule_CBCCs_3 = new ol.format.GeoJSON();
 var features_Akule_CBCCs_3 = format_Akule_CBCCs_3.readFeatures(json_Akule_CBCCs_3, 
