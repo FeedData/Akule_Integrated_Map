@@ -49,7 +49,7 @@
 </style>
         <style>
         html, body {
-            background-color: #ffffff;
+            background-color: #FAF5EF;
             position: relative;
         }
         .ol-control button {
@@ -132,34 +132,56 @@
             position: relative;
         }
         
-        .title{
+        /* .title{
             text-align: center;
             background: none !important;
-        }
-        .text {
+            opacity:0.1;
             position: relative;
-            text-align: center;
-            transform: translate(-50%, -50%);
-            color: white;
+        } */
+
+        #map{
+            position: relative;
+        }    
+        .text {
+            color: black;
             font-size: 24px;
-            background-color: rgba(0, 0, 0, 0.5); /* Adding a semi-transparent background */
             padding: 10px;
+            z-index: 99;
             border-radius: 5px; /* Optional: Adding border-radius for rounded corners */
+            background: #fffdd0;
+            margin: 10px;
+            opacity:0.5;
             }
+        .total_cbccs{
+            position: absolute; 
+            z-index: 99;
+            margin-left: 50px;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 15px;
+            background: #fffdd0;
+        }   
+        .header_title{  
+            margin: auto;
+            text-align: center;
+            padding:10px;
+        } 
         </style>
         <title></title>
     </head>
     <body>
         
         <div id="map">
-            <h2 class="title"><span class="text"> Akule Ndi Thanzi CBCC's </span></h2>
+            
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-                <div id="popup-content"></div>
+                <div id="popup-content" ></div>
             </div>
+            <h2 class="header_title"><span class="text"> Akule Ndi Thanzi CBCC's </span></h2>
+                <!-- <h2 class='total_cbccs'> Total CBCC's: 1289 </h2> -->
         </div>
         <script src="resources/qgis2web_expressions.js"></script>
-<script src="resources/proj4.js"></script>
+        <script src="resources/proj4.js"></script>
         <script>proj4.defs('EPSG:32736','+proj=utm +zone=36 +south +datum=WGS84 +units=m +no_defs');</script>
         <script src="resources/polyfills.js"></script>
         <script src="./resources/functions.js"></script>
