@@ -50,6 +50,7 @@
         <style>
         html, body {
             background-color: #ffffff;
+            position: relative;
         }
         .ol-control button {
             background-color: #f8f8f8 !important;
@@ -128,11 +129,27 @@
             height: 100%;
             padding: 0;
             margin: 0;
+            position: relative;
         }
+        
+        .title{
+            text-align: center;
+        }
+        .text {
+            position: relative;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            background-color: rgba(0, 0, 0, 0.5); /* Adding a semi-transparent background */
+            padding: 10px;
+            border-radius: 5px; /* Optional: Adding border-radius for rounded corners */
+            }
         </style>
         <title></title>
     </head>
     <body>
+        <h2 class="title"><span class="text"> Akule Ndi Thanzi CBCC's </span></h2>
         <div id="map">
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
